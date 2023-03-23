@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  background-color: lightblue;
+  color: rgb(203, 19, 19);
+}
+
+.backgroundVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+main {
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  // 메인축 방향 정렬
+  justify-content: center;
+  // 수직축 방향 정렬
+  align-items: center;
+
+  .time {
+    font-size: 60px;
+    font-family: "Staatliches", cursive;
+    text-align: center;
+    color: #f1c164;
+    text-shadow: 5px 5px #2d63a7;
+    margin: 0;
+  }
+
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    color: #f1f1f1;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+
+  .quotes {
+    position: relative;
+    font-size: 60px;
+    .quotesAddBtn {
+      display: none;
+
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, 50%);
+    }
+
+    &:hover {
+      .quotesAddBtn {
+        display: inline-block;
+      }
+    }
+  }
+
+  .newQuotes {
+    display: none;
+  }
+}

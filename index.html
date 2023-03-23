@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <h1 class="animate__animated animate__bounce">현재 시각</h1>
+      <div class="time">TIME</div>
+      <div class="quotes">
+        <div class="quotesMsg">qutoes</div>
+        <button class="quotesAddBtn" onclick="onClickAdd()">
+          새 명언 추가
+        </button>
+      </div>
+      <div class="newQuotes">
+        <input class="newQuotesInput" type="text" />
+        <button class="newQuotesButton" onclick="onClickRegist()">등 록</button>
+      </div>
+    </main>
+    <video
+      class="backgroundVideo"
+      src="images/background.mp4"
+      autoplay
+      muted
+      loop
+    ></video>
+    <script src="main.js"></script>
+  </body>
+</html>
