@@ -9,7 +9,11 @@
 body {
   margin: 0;
   background-color: lightblue;
-  color: rgb(203, 19, 19);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  color: #f1f1f1;
+  letter-spacing: 5px;
+  text-align: center;
 }
 
 .backgroundVideo {
@@ -49,6 +53,7 @@ main h1 {
 main .quotes {
   position: relative;
   font-size: 60px;
+  margin: 30px;
 }
 main .quotes .quotesAddBtn {
   display: none;
@@ -63,10 +68,37 @@ main .quotes:hover .quotesAddBtn {
 main .newQuotes {
   display: none;
 }
+main .search {
+  margin: 100px;
+}
 main .search .searchLogo {
   width: 32px;
   height: 32px;
   animation: spin 20s linear infinite;
+}
+main .search .searchName {
+  display: inline-block;
+  text-align: center;
+}
+main .searchForm {
+  margin: 20px;
+}
+main .searchForm .searchButton {
+  position: relative;
+  border: none;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-family: "paybooc-Light", sans-serif;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+}
+main .searchForm .searchButton:hover {
+  letter-spacing: 2px;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 main .searchResult {
   display: none;
